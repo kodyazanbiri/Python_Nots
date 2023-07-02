@@ -27,6 +27,70 @@ print(type(x))
 ```python
 <class 'int'>
 ```
+### Sayısal Veri Tipleri
+
+- Python'da üç sayısal tür bulunur:
+
+  * int
+  * float
+  * complex
+  
+Değişken tanımlandığı zaman tanımlanan sayıya göre bu türlerden hangisi olacağı belirlenir.
+
+Örneğin:
+
+```python
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+```
+- İnt
+
+Int bir tam sayı değeridir. Pozitif veya negatif bir sayı olabilir. Ondalıklı değer alamaz. Sonsuz uzunlukta olabilir.
+
+Örneğin:
+
+```python
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+- Float
+
+Float, pozitif ya da negatif kesirli ve ondalıklı ifadeler barındırabilir.
+
+Örneğin:
+
+```python
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+- Complex
+
+Complex, karmaşık sayıları ifade eder. Tanımlanırken j harfi ile belirtilir.
+
+Örneğin:
+
+```python
+
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+### DİP NOT:
 - Zincirleme atama(Chained Assignment)
  
 Örneğin:
