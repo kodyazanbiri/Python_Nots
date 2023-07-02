@@ -22,7 +22,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 C:\Users\Kullanıcı Adı>python dosya.py
 ```
-- Python Derleyicisini Kapatmak için aşağıdaki komutu yazmak yeterlidir.
-```
-exit()
-``` 
+
