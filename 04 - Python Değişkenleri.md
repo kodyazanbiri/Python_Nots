@@ -94,7 +94,7 @@ x = 5
 y = 10
 print(x + y)
 ```
-### Yerel(Local) ve Genel(Global) Değişkenler !!! ANLAMADIM BUNU DÜZENLEEE
+### Yerel(Local) ve Genel(Global) Değişkenler 
 
 Yerel değişkenler sadece tanımlandıkları kod bloğunda tanımlıyken, genel (global) değişkenler ise kodlarımızın tamamında tanımlıdır.
 Bir fonksiyonun dışında tanımlanmış tüm değişkenler genel (global) değişkenlerdir.
@@ -115,24 +115,55 @@ myfunc()
 ```
 
 
-
-
 - Yerel değişkenler;
 
 Fonksiyonlarda tanımlanan değişkenler yerel değişkenler olarak adlandırılır. Yerel değişkenlerle kastettiğimiz şey değişkenlerin fonksiyona özgü olması ve fonksiyonun işi bittikten sonra bellekten silinip kaybolmasıdır. Böyle değişkenlere başka bir yerden erişilemez.
 
 Örneğin:
-
 ```python
 def function():
-    a = 5
-   
+    a = 5  
 function()
 print(a)
 ```
+- Eğer bir fonksiyonun içinde global bir değişkenle aynı isimde bir değişken tanımlanırsa, bu değişken sadece fonksiyon için geçerli olur. Ancak global değişken değerini korur.
 
+Örneğin:
+```python
+x = "muhteşem"
 
+def myfunc():
+  x = "fantastik"
+  print("Python " + x)
 
+myfunc()
 
+print("Python " + x)  # Ekranda Python fantastik   yazar
+                                Python muhteşem     
+``` 
+- Bir fonksiyonun içinde global bir değişken tanımlamak istiyorsan global yazıp uygulamanın tümünde geçerli olacak değişken adını yazarız:
 
+Örneğin:
+```python
+def myfunc():
+  global x
+  x = "fantastik"
 
+myfunc()
+
+print("Python " + x)  # Burda x fonksiyon dışında fakat global olarak tanımladığım için burda da aynı değeri alır.
+```
+- Ayrıca fonksiyon içinde global yazılarak tanımlanmış bir değişken, fonksiyon dışında tanımlıysa değişkende yapılacak değişiklikler tüm uygulamamıza yansıyacaktır:
+
+Örneğin:
+```python
+x = "muhteşem"
+
+def myfunc():
+  global x
+  x = "fantastik"
+
+myfunc()
+
+print("Python " + x)
+```
