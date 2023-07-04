@@ -79,10 +79,17 @@ print(len(a))   # 14
 Bu method metinde bulunan boşlukları kaldırır. Başta ve sonda boşluklar varsa bu boşlukları kaldırır.
 
 Örneğin:
-
 ```python
 a = " Merhaba Dünya   "
 print(a.strip()) # Ekranda "Merhaba Dünya" yazacaktır.
+```
+- strip() metodunun belirttiğimiz karakterleri silmesini istersek bu karakteri parametre olarak göndermemiz gerekir.
+
+Örneğin:
+```python
+name = ",,,,...!!suna***"
+x = name.strip(',.!*')
+print("my name is " +  x)  # my username is suna
 ```
 ### 2. len() Metodu
 Bu metot metnin uzunluğunu geri döndürecektir.
@@ -116,20 +123,28 @@ print(a.lower())   # Ekranda ‘PYTHON ÖRNEKLERİ‘ yazacaktır.
 ```
 
 ### 5. replace() Metodu
-Bu metot metinde değiştirilmek istenen karakterler için kullanılır.
+Replace metodu karakter güncellemesi için kullanılır. 
 
 Örneğin:
-
 ```python
 a = "Python Örnekleri"
 print(a.replace("e", "*"))   # Ekranda ‘Python Örn*kl*ri‘ yazacaktır.
 ```
-
+Örneğin:
+```python
+message = 'My name is Suna'
+message = message.replace('Suna','Ayse')  # My name is ayse
+```
 ### 6. split() Metodu
-Bu metot bir ayırıcı kullanarak metni bölümlere ayırmak için kullanılır.
+Bu metot bir ayırıcı kullanarak metni bölümlere ayırmak için kullanılır. Yani karakter dizisinde belirtilen bir karaktere göre parçalama işlemi yapar. 
 
 Örneğin:
-
+```python
+message = 'suna'
+message = message.split('u') 
+print(message) # Ekranda ['s', 'na'] yazar.
+```
+Örneğin:
 ```python 
 a = "Python,C#,C++,Java"
 print(a.split(","))  #  Ekranda [‘Python’, ‘C#’, ‘C++’, ‘Java’] yazacaktır.
@@ -139,7 +154,6 @@ print(a.split(","))  #  Ekranda [‘Python’, ‘C#’, ‘C++’, ‘Java’] 
 Bu metot kullanılarak kullanıcıdan veri girişi yapması istenir. Aşağıdaki örnek kullanıcı ismini sorar ve ekranda Merhaba … olarak yazdırır.
 
 Örneğin:
-
 ```python 
 print("Adınız : ")
 ad = input()
@@ -150,7 +164,6 @@ print("Merhaba, " + ad)
 Bir ifadenin veri içerisinde geçip geçmediğini anlamak için `in` ve `not in` kullanılır.
 
 Örneğin:
-
 ```python 
 txt = "Akdeniz Bölgesinde dağlar denize paraleldir"
 x = "paralel" in txt
@@ -163,7 +176,6 @@ print(y)   # kod çalıştırıldığında ekranda x'in True, y'nin False olduğ
 Metin içeren iki veriyi birleştirmek için `artı (+)` kullanılır.
 
 Örneğin:
-
 ```python 
 a = "Merhaba"
 b = "Dünya!"
@@ -177,7 +189,6 @@ Bunun için `format()` fonksiyonundan faydalanılabilir.
 format() yöntemi ile kıvrımlı parantez {} ile ifade edilen yer tutuculara değerler yerleştirir. Bu şekilde farklı türlerde sınırsız değeri metin içerisinde kullanabiliriz.
 
 Örneğin:
-
 ```python 
 yas = 30
 metin = "Benim adım Murat, ve ben {} yaşındayım!"
