@@ -24,6 +24,27 @@ Dizedeki bir elemana ulaşmak için sıra numarasını köşeli parantez içinde
 thislist = ["elma", "muz", "ayva"]
 print(thislist[1])  # Ekranda muz yazar.
 ```
+### İki farklı listeyi bir liste içinde gruplamak
+
+Örneğin:
+```python
+list1 = ['one','two','there']
+list2 = ['four','five','six']
+```
+### Liste içinde farklı listelerde tanımlayabiliriz.
+Örneğin:
+```python
+list1 = [[1,2,3],[4,5,6],[7,8,9],10] # list1 içinde 4 eleman var diyebiliriz ilk 3 eleman bir liste 4.eleman ise number türünde bir değer.
+```
+- Her bir kullanici bilgisini ayrı bir liste de tanımlayıp sonrasında kullanicilar isminde bir liste içinde gruplama yapabiliriz.
+
+Örneğin:
+```python
+kullaniciA = ['Suna', 3]
+kullaniciB = ['Ayse', 2]
+
+kullanicilar = [kullaniciA,kullaniciB]
+```
 ### Sondan Sıraya Göre Değer Almak
 Negatif Sıra: Python'da köşeli parantez içinde negatif sıra numarası belirtebilirsiniz. Bu şekilde kullanıldığında sondan kaçıncı nesne ise o görüntülenecektir.
 
@@ -61,6 +82,13 @@ print(liste[2:])  # Ekranda kiraz, portakal, kivi, karpuz, mango yazar.
 liste = ["elma", "muz", "kiraz", "portakal", "kivi", "karpuz", "mango"]
 print(liste[-4:-1]) # Ekranda portakal, kivi, karpuz yazar.
 ```
+- [::] diyerek tüm listeyi seçmiş oluyoruz.
+- 
+Örneğin:
+```python
+liste = ["elma", "muz", "kiraz", "portakal", "kivi", "karpuz", "mango"]
+print(liste[::]) # Ekranda elma, muz, kiraz, portakal, kivi, karpuz, mango yazar.
+```
 ### Bir Değeri Değiştirmek
 Dizedeki bir değeri değiştirmek için önce değişkenin adının sağına köşeli parantez arasında sıra numarası (index) yazılır, ardından eşittir kullanılarak yeni değer yazılır.
 
@@ -70,7 +98,7 @@ liste = ["elma", "muz", "armut"]
 liste[0] = "mandalina"
 print(liste)
 ```
-### Dizedeki Tüm Değerleri Sırayla Yazdırmak
+### Listedeki Tüm Elemanları Sırayla Yazdırmak
 for döngüsünü aşağıdaki biçimde kullanarak dizedeki değerleri tek tek işleyebiliriz.
 
  Örneğin:
