@@ -1,8 +1,6 @@
 # Python For Döngüsü
 Python'da döngülerden biri de for döngüsüdür. Bu döngü, bir dizedeki (list, tuple, dict, set) veya metindeki (string) elemanları/harfleri tek tek ele alır.
 
-Elbette for birçok programlama dilinde yineleyici işlevine sahiptir. Ancak python'da çok daha geniş bir kullanım olanağı sunar.
-
 Örneğin:
 ```python
 meyveler = ["muz", "elma", "kiraz"]
@@ -19,7 +17,7 @@ Tüm metin (string) türü değişkenler for kullanılarak harf harf sıralanabi
 for x in "coğrafya":
   print(x)
 ```
-- break İfadesi
+### break İfadesi
 Bu ifadeyi kullanarak for döngüsünü elemanların bitmesini beklemeden sonlandırabiliriz.
 
 Örneğin:
@@ -49,9 +47,8 @@ Belli sayıda tekrarlı bir döngü oluşturacaksak range(sayı) kodu kullanıla
 Örneğin:
 ```python
 for x in range(6):
-  print(x)
+  print(x)  # kod çalıştırıldığında derleyici ekrana 0'dan 5'e kadar sayılar yazdırır.
 ```
-Yukarıdaki kod çalıştırıldığında derleyicinin ekrana 0'dan 5'e kadar sayılar yazdırdığı görülecektir.
 
 - Eğer 0'dan değil de farklı bir sayıdan başlamasını istersek range(başla, git) kullanılabilir. İlk parametre hangi sayıdan başlayacağı, ikinci parametre kaça kadar gideceği (bu sayı dahil değildir) sayıdır.
 
