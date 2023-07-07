@@ -1,7 +1,7 @@
 # Koleksiyon Veri Tipleri - Tuples
-Python'daki liste türlerinden bir diğeri tuple dir. Bir önceki derste anlatılan list'ten farklı olarak değiştirilemez, ilk tanımlandığı şekilde kalır. Bu dizelere ekleme, silme, sıra (index) değiştirme işlemi de yapılamaz.
+Tuple değiştirilemez, ilk tanımlandığı şekilde kalan bir veri tipidir. Bu dizelere ekleme, silme, sıra (index) değiştirme işlemi yapılamaz.
 
-İlk tanımlama yapılırken tuple nesnelerine parantez içinde yer verilir.
+- İlk tanımlama yapılırken tuple nesnelerine parantez içinde yer verilir.
 
 Örneğin:
 ```python
@@ -17,22 +17,21 @@ x = ("muz", "elma", "kiraz")
 y = list(x)
 y[1] = "kiwi"
 x = tuple(y)
-
-print(x)
+print(x)  # x adlı tuple y adlı listeye dönüştürüldü. Ardından 1. eleman "kiwi" olarak değiştirilmiş. Sonra liste tekrar tuple türüne dönüştürülmüş.
 ```
 
 ### Tek Elemanlı Tuple Oluşturmak
-Eğer tuple türü dizemiz içinde tek bir eleman olacaksa tanımlarken ilk nesneden sonra virgül kullanılmalıdır. Bu kullanılmazsa string türde bir değişken elde edilmiş olur.
+Eğer tuple veri tipinin içinde tek bir eleman olacaksa tanımlarken ilk nesneden sonra virgül kullanılmalıdır. Bu kullanılmazsa string türde bir değişken elde edilmiş olur.
 
 Örneğin:
 ```python
 #Bir tuple:
-thistuple = ("elma",)
-print(type(thistuple))
+tuple1 = ("elma",)
+print(type(tuple1))
 
 #Bir tuple degil, bir string:
-thistuple = ("elma")
-print(type(thistuple))
+tuple1 = ("elma")
+print(type(tuple1))
 ```
 
 ### Birden Fazla Tuple Birleştirmek
@@ -48,7 +47,7 @@ print(tuple3)
 ```
 
 ### Yapıcı (Constructor) Kullanarak Tuple Oluşturmak
-Alışılagelmiş ("a", "b" , "c") yapısı yerine tuple() nesnesini kullanarak tuple oluşturulabilir.
+tuple() nesnesini kullanarak tuple oluşturulabilir.
 
 Örneğin:
 ```python
