@@ -14,3 +14,10 @@ message_length = len(message)
 # print(message[3:])
 # print(message[:16])
 print(message[2:40:3])
+
+#----------------------
+name = 'Ali'
+surname = 'Veli'
+age = 28
+
+print(f"Hello, I am {name} {surname} and I am {age} years old.")
