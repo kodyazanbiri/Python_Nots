@@ -1,0 +1,24 @@
+message = 'Merhaba. Bu bir python kodudur.'
+
+# message = message.upper() # butun harfleri buyuk yapar
+# message = message.lower() # butun harfleri kucuk yapar
+# message = message.title() # butun kelimelerin sadece ilk harfini buyuk yapar
+# message = message.capitalize() # string ifadenin ssadece ilk harfini buyuk yapar
+
+# message = message.strip() # bas ve sondaki bosluk karakterlerini siler
+# message = message.split() # stringi her bir bosluk karakterinden ayırıp liste yapar
+# message = message.split('.') #stringi nokta olan yerlerde ayır
+# message= '---'.join(message) # tırnak icindeki karakteri her bir kelimenin arasına koyar
+
+# index = message.find('Bu')  # aranan kelime stringi icinde varsa onun ilk harfinin index numarasını verir. Eger kelime yoksa -1 degerini verir
+# isFound = message.startswith('H') 
+# isFound = message.endswith('n') 
+
+# message = message.replace('python','java') #stringdeki 1.parametreyi 2.parametre olarak degistirir
+# message = message.replace('ç','c')
+#                  .replace('ö','o')
+#                  .replace(' ','-')
+
+message = message.center(50,'*') # stringin sagına ve soluna 2.parametredeki karakterleri yazar
+
+print(message)
