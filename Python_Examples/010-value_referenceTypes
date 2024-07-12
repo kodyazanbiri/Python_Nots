@@ -1,0 +1,34 @@
+# value types => string, number
+"""İlk olarak x'e 5, y'e 25 atanıyor. Sonra x = y ifadesiyle x'in değeri y'nin değeri olan 25 oluyor. Sonrasında y = 10 dediğimizde y'in değeri 10 oluyor. Ancak x'in değeri hala y'nin eski değeri olan 25 olarak kalıyor. Bu yüzden print(x, y) ifadesi çalıştırıldığında ekrana 25 10 yazdırılır.
+
+Value Types, her bir değişkenin bellekte ayrı bir yer kapladığı ve değerlerin doğrudan değiştirildiği veri türleridir. Bu nedenle, bir değer tipindeki değişkenin değeri değiştirildiğinde, diğer değişken bundan etkilenmez çünkü her biri kendi bağımsız bellek alanına sahiptir."""
+
+x = 5
+y = 25
+
+x = y
+
+y = 10
+
+# print(x,y)
+
+# reference types => list
+"""
+value types deger tutarken, reference types bellek adreslerini tutar. bunlarda aynı bellek adresini gösterdiği için üzerinde degisiklik yapılınca her ikisi de etkilenir.
+Adres bilgisine karşılık gelen value degerler belleğin başka bir kısmında tutulur. Ve ben bunları eşittir yapınca(a = b) adres bilgileri aynı olur.
+
+Referans tipleri (reference types) ise bellekte gerçek verinin yerine veriye işaret eden referansları (pointer'ları) saklarlar. Python'da bazı referans tipleri şunlardır:
+list: Değiştirilebilir (mutable) sıralı veri yapıları.
+dict: Anahtar-değer çiftlerini saklayan sözlükler.
+set: Benzersiz elemanların koleksiyonu.
+"""
+
+a = ["apple","banana"]
+b = ["apple","banana"]
+
+a = b
+
+b[0] = "grape"
+print(a, b)
+
+# ÖZETLE: value types verinin kendisi, reference types bellek adresleriyle alakalı
